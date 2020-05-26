@@ -51,7 +51,6 @@ public class HibernateConfig {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(dataSource());
         sessionFactory.setPackagesToScan("incubator");
-
         sessionFactory.setHibernateProperties(hibernateProperties());
         return sessionFactory;
     }

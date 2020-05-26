@@ -22,11 +22,9 @@ public class TestRepository implements DaoRepos<Test> {
         try {
             Class.forName("com.mysql.jdbc.Driver");
 
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/managementsystem", "root", "root1");
-
-//            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/managementsystem?verifyServerCertificate=false&useSSL=true", "root", "123qwe");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/managementsystem", "root", "qwe123");
             Statement st = con.createStatement();
-            ResultSet rs = st.executeQuery("select   testdifficulty(" + testId + ")");
+            ResultSet rs = st.executeQuery("select testdifficulty(" + testId + ")");
             while (rs.next()) {
                 return (int) (rs.getDouble(1) * 100);
             }

@@ -46,7 +46,6 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                         + " from user where login=?")
                 .authoritiesByUsernameQuery("select login, nameRole "
                         + "from user where login=?");
-
     }
 
     @Override

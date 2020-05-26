@@ -89,9 +89,4 @@ public class StatisticRepository implements DaoRepos<Statistic> {
         }
         return statList;
     }
-
-
-
-
-
-    }
+}

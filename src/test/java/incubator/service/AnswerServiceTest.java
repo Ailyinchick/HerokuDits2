@@ -27,7 +27,7 @@ public class AnswerServiceTest extends AbstractTestNGSpringContextTests {
 
     @Test
     public void showAll() {
-        System.out.println(answerService.getAnswerByDescription("2 false answer on first question"));
+        System.out.println(answerService.getAnswerByDescription("Answer 1 (true)"));
     }
 
 

@@ -41,7 +41,6 @@
                                 <td>
                                     <c:forEach items="${item.question.literatureList}" var="lit">
                                         <a href="<c:url value="${lit.casualLinks}" />">${lit.casualLinks}</a> <br>
-
                                     </c:forEach>
                                 </td>
                             </tr>
